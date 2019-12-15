@@ -1,0 +1,20 @@
+<h4>Lista de Clientes Ibk <h4>
+
+
+<table border=1>
+<th>Nombres</th><th>Apellidos</th><th>Edad</th><th>Fec.Naciemiento</th><th>Fec.Muerte</th>
+<tr  *ngFor="let cliente of listaClientes" >
+  <td>{{cliente.nombres}}</td>
+  <td>{{cliente.apellidos}}</td>
+  <td>{{cliente.edad}}</td>
+  <td>{{cliente.fecNacimiento}}</td>
+  <td>{{cliente.fecMuerte}}</td>
+</tr>  
+
+</table>
+<p>
+<table>
+  <tr>
+    <td><a routerLink="">Registro de Clientes</a></td>
+  </tr>
+</table> 

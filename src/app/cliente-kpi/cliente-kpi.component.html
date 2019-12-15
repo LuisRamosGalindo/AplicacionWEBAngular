@@ -1,0 +1,20 @@
+
+<h4>KPI de Clientes Ibk <h4>
+<table border=1>
+<tr>
+  <th>Promedio Edades</th><th>Desviación Estándar</th>
+</tr>
+  <tr *ngIf="kpiClientes">
+    <td>{{kpiClientes.promedioEdad}}</td>
+    <td>{{kpiClientes.desvEstandar}}</td>
+  </tr>
+</table>
+
+<p>
+<table>
+  <tr>
+    <td><a routerLink="">Registro de Clientes</a></td>
+  </tr>
+</table> 
+
+

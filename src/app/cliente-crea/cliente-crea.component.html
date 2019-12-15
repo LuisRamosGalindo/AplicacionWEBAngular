@@ -1,0 +1,50 @@
+<h4>Registro de clientes Ibk</h4>
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.6.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+    <label for="nombres">
+      Nombres
+    </label>
+    <input id="nombres" type="text" formControlName="nombres">
+  </div>
+
+  <div>
+    <label for="apellidos">
+      Apellidos
+    </label>
+    <input id="apellidos" type="text" formControlName="apellidos">
+  </div>
+<div>
+    <label for="edad">
+      Edad
+    </label>
+    <input id="edad" type="text" formControlName="edad">
+  </div>
+  <div>
+    <label for="fecNacimiento">
+      Fecha Nacimiento
+    </label>
+    <input id="fecNacimiento" type="date" formControlName="fecNacimiento">    
+  </div>
+  <div>
+    <input id="fecMuerte" type="hidden" formControlName="fecMuerte">
+  </div>
+  <button class="button" type="submit">Registrar</button>
+
+
+  <p>
+    <a routerLink="/listaClientes">Lista clientes</a>
+  </p>
+  <p>
+    <a routerLink="/kpiClientes">KPI Clientes</a>
+  </p>
+</form>
+<body>
